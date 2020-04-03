@@ -29,8 +29,8 @@
     div.appendChild(a);
     
     const a2 = document.createElement("a");
-    const query = window.location.toString().match(urlRegex)[1];
-    a2.href = "https://duckduckgo.com/?q=" + query;
+    const query2 = window.location.toString().match(urlRegex)[1];
+    a2.href = "https://duckduckgo.com/?q=" + query2;
     a2.classList.add("btn", "btn-primary");
     a2.style = "margin-top: 1px;";
     a2.id = "MongoBohne";
