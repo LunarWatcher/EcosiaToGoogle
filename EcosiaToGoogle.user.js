@@ -28,6 +28,16 @@
 
     div.appendChild(a);
     
+    const a2 = document.createElement("a");
+    const query = window.location.toString().match(urlRegex)[1];
+    a2.href = "https://duckduckgo.com/?q=" + query;
+    a2.classList.add("btn", "btn-primary");
+    a2.style = "margin-top: 1px;";
+    a2.id = "MongoBohne";
+    a2.innerText = "Link to DDG";
+    
+    div.appendChild(a2);
+    
     const reference = searchBarParent.parentElement.children[2];
     searchBarParent.parentElement.insertBefore(div, reference);
     
